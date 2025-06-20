@@ -71,3 +71,114 @@ header {
     width: 18px;
     height: 18px;
 }
+
+.sub-header {
+    position: relative;
+    background: url('./images/reading.jpg') center center/cover no-repeat;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+.sub-header h1 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    margin-bottom: 48px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.search-box {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 16px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 18px 24px;
+    align-items: center;
+    min-width: 900px;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 0 18px;
+    height: 56px;
+    min-width: 220px;
+    gap: 10px;
+}
+
+.search-field input {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background: transparent;
+    width: 160px;
+}
+
+.search-field label {
+    font-size: 0.95rem;
+    color: #757575;
+    font-weight: 500;
+}
+
+.search-field .value {
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.search-field .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.search-btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 0 32px;
+    height: 56px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-btn:hover {
+    background: #1256a3;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1100px) {
+    .search-box {
+        min-width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 10px;
+    }
+    .search-field {
+        min-width: 100%;
+    }
+}
