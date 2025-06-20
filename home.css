@@ -170,7 +170,154 @@ header {
     background: #1256a3;
 }
 
-/* Responsive for smaller screens */
+/* Signup Banner */
+.Signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.signup-banner {
+    display: flex;
+    align-items: center;
+    background: #1a2340;
+    color: #fff;
+    border-radius: 24px;
+    padding: 28px 36px;
+    gap: 24px;
+    max-width: 1400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signup-icon {
+    background: #23305a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.signup-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.signup-btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-left: 24px;
+    white-space: nowrap;
+}
+
+.signup-btn:hover {
+    background: #1256a3;
+}
+
+/* Find Accom Section */
+.find-accom {
+    max-width: 1400px;
+    margin: 0 auto 48px auto;
+    padding: 0 16px;
+}
+
+.find-accom h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    font-weight: 700;
+    color: #1a2340;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.accom-cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.accom-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    width: 260px;
+    height: 340px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.accom-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(25, 118, 210, 0.15);
+}
+
+.accom-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.accom-label {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .accom-cards {
+        gap: 18px;
+    }
+    .accom-card {
+        width: 200px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 800px) {
+    .signup-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 18px 12px;
+    }
+    .find-accom h2 {
+        font-size: 1.5rem;
+    }
+    .accom-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .accom-card {
+        width: 90vw;
+        max-width: 340px;
+        height: 200px;
+    }
+}
+
 @media (max-width: 1100px) {
     .search-box {
         min-width: 100%;
