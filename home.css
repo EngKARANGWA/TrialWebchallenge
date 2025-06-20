@@ -1,0 +1,73 @@
+header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.header-logo {
+    font-size: 2.5rem;
+    color: #1976d2;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo sup {
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.header-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.header-nav a:hover {
+    color: #1976d2;
+}
+
+.header-nav .download-btn {
+    border: 1px solid #e0e0e0;
+    border-radius: 22px;
+    padding: 8px 18px;
+    background: #fff;
+    color: #000000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s, border 0.2s;
+}
+
+.header-nav .download-btn:hover {
+    background: #f5faff;
+    border-color: #1976d2;
+}
+
+.download-btn span {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.download-btn svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+}
